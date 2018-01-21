@@ -1,0 +1,7 @@
+{
+	"books": [
+      {"title": "ABook", "author": "Author1"},
+      {"title": "BBook", "author": "Author2"},
+      {"title": "CBook", "author": "Author3"}
+    ]
+}
