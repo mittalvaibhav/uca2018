@@ -1,1 +1,43 @@
 ./es6-project/node_modules/*
+
+
+# compiled output
+./angular-proj/dist
+./angular-proj/tmp
+./angular-proj/out-tsc
+
+# dependencies
+./angular-proj/node_modules
+
+# IDEs and editors
+/.idea
+./angular-proj.project
+./angular-proj.classpath
+./angular-proj.c9/
+*.launch
+./angular-proj/.settings/
+./angular-proj/*.sublime-workspace
+
+# IDE - VSCode
+./angular-proj/.vscode/*
+./angular-proj/!.vscode/settings.json
+./angular-proj/!.vscode/tasks.json
+./angular-proj/!.vscode/launch.json
+./angular-proj/!.vscode/extensions.json
+
+# misc
+./angular-proj/.sass-cache
+./angular-proj/connect.lock
+./angular-proj/coverage
+./angular-proj/libpeerconnection.log
+./angular-proj/npm-debug.log
+./angular-proj/testem.log
+./angular-proj/typings
+
+# e2e
+./angular-proj/e2e/*.js
+./angular-proj/e2e/*.map
+
+# System Files
+./angular-proj/.DS_Store
+./angular-proj/Thumbs.db
