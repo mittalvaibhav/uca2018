@@ -1,15 +1,16 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <form>
+      <form #bookForm="ngForm" (ngSubmit)="submitBookRequestForm(bookForm)">
         <div class="form-group">
-          <label for="bookTitle">Book Title</label>
-          <input type="text" id="bookTitle" name="bookTitle">
+          <label for="title">Book Title</label>
+          <input type="text" id="title" name="title" ngModel>
         </div>
         <div class="form-group">
-          <label for="bookAuthor">Book Author</label>
-          <input type="text" id="bookAuthor" name="bookAuthor">
+          <label for="author">Book Author</label>
+          <input type="text" id="author" name="author" ngModel>
         </div>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
     </div>
   </div>

@@ -20,10 +20,10 @@ export class MainPageComponent implements OnInit {
   public parentBooks: Array<book>;
   public book2: BookInterface;
 
-  @ViewChild(DatatableComponent) 
+  @ViewChild(DatatableComponent)
   private datableChild: DatatableComponent;
 
-    public myBook = new book('CSBook', 'SomeABC');
+  public myBook = new book('CSBook', 'SomeABC');
 
   constructor(private booksService: BooksService, private http: HttpClient) {
     console.log("Header component is created");
@@ -51,14 +51,6 @@ export class MainPageComponent implements OnInit {
     //   }
     // }
 
-    this.http.get<book[]>('http://localhost:3000/books')
-      .subscribe(response => {
-        this.parentBooks = response;
-      }, error => {
-        alert("some error");
-      }
-      );
-
     // this.http.post('http://localhost:3000/books')
 
     console.log('acs');
@@ -80,6 +72,14 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
     console.log("ngOnit methid is called");
     this.book2 = { volume: 1, title: '', entryDate: '' };
+
+    this.http.get<book[]>('http://localhost:8000/books')
+      .subscribe(response => {
+        this.parentBooks = response;
+      }, error => {
+        alert("some error");
+      });
+
   }
 
   public clickSubmit() {
