@@ -8,6 +8,8 @@
 
 # dependencies
 ./angular-proj/node_modules/
+./UniversityLibrary/node_modules/
+
 
 # IDEs and editors
 /.idea
