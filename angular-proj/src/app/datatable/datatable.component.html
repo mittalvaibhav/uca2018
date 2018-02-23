@@ -1,0 +1,28 @@
+<div *ngIf="false">
+  <h3>CHild component</h3>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th style="width: 10px;">Select</th>
+        <th>Subject</th>
+        <th>Author</th>
+        <th>Entry Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of childBooks">
+        <td>
+          <input type="checkbox" (change)="booksSelected(book)">
+        </td>
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.entryDate}}</td>
+      </tr>
+      <!-- <tr>
+          <td>aa</td>
+          <td>as</td>
+          <td>as</td>
+        </tr> -->
+    </tbody>
+  </table>
+</div>

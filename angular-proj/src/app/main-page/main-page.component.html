@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="name" name="nameValue" [(ngModel)]="nameValue">
+        </div>
+
+        <button type="submit" class="btn btn-default" (click)="clickSubmit()" [disabled]="false">Submit</button>
+        <button type="submit" class="btn btn-default" (click)="showAlert('a')" [disabled]="getButtonState()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row" style="margin:20px">
+    <div class="col-md-12">
+      <h4>The selected book names are {{selectedBookName}}</h4>
+    </div>
+  </div>
+
+  <div *ngIf="showTable" class="row">
+    <div class="col-md-12">
+      <app-datatable [childBooks]="parentBooks" (selectBook)="bookSelected($event)"></app-datatable>
+    </div>
+  </div>
+
+  <button (click)="toggleTableVisibility()">Show/Hide table</button>
+
+</div>
