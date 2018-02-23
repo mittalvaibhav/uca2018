@@ -7,6 +7,7 @@
 ./angular-proj/out-tsc
 
 # dependencies
+node_modules/
 ./angular-proj/node_modules/
 ./UniversityLibrary/node_modules/
 
