@@ -7,7 +7,7 @@
 ./angular-proj/out-tsc
 
 # dependencies
-./angular-proj/node_modules
+./angular-proj/node_modules/
 
 # IDEs and editors
 /.idea
