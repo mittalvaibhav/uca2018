@@ -15,7 +15,7 @@ app.use('', function(req, res, next) {
 });
 
 var middlewareFunction = function() {
-    console.log("Middle ware called");
+    console.log("Middleware test called");
 };
 
 var booksRoute = require('./models/book');
