@@ -22,6 +22,7 @@ router.get('', (req, res) => {
         if (err) {
             throw err
         } else {
+            console.log('Get books request process successfully');
             res.send(books);
         }
     })
