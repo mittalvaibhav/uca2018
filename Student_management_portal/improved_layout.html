@@ -1,0 +1,52 @@
+<html>
+        <head>
+                <title>Students Details</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </head>
+        <body background="image.jpg">
+            <script src="scripting.js"></script>
+            <div class="container">
+                <center>
+                    <h2><i>Students Details Record!!</i> </h2>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <label>Student Name:</label><input type="text"/>
+                            <label>Student Rollno.</label><input type="text">
+                            <label>Section</label><input type="text"><br/>
+                           
+                        </form>  
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-info" onclick="Insert()">
+                            <span class="glyphicon glyphicon-pencil"></span> Insert</button> 
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-info" onclick="Delete()" ><span class="glyphicon glyphicon-trash"></span> Delete</button> 
+                    </div>
+                    <div class="col-md-4">
+                       <button type="button" class="btn btn-info" onclick="Edit()"><span class="glyphicon glyphicon-edit"></span>Edit</button> 
+                    </div>    
+
+                </div>
+                <div class="row">
+                        <div class="col-md-12">
+                            <table class="table " id="tab">
+                                    
+                                <tr><td align="center">Select</td><td align="center">Student Name</td><td align="center">Student Rollno.</td><td align="center">Section</td></tr>
+                             </table>
+                        </div>
+                </div>             
+                </center>
+            </div>   
+
+        </body>
+</html>        
